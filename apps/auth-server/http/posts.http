@@ -1,0 +1,12 @@
+### get all posts by user token
+GET http://localhost:3010/api/posts
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImlhdCI6MTY2NjU0NjI5NX0.h9xJyUP_UsYqny6pW6QPLqmVQKO-Dj6Cv8drNuHxW_Q
+
+### get access token by username
+POST http://localhost:3010/api/login
+Content-Type: application/json
+
+{
+  "username": "Alex"
+}

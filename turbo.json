@@ -5,6 +5,11 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "auth-server#build": {
+      "dependsOn": ["^build"],
+      "env": ["ACCESS_TOKEN_SECRET", "REFRESH_TOKEN_SECRET"],
+      "outputs": ["dist/**", "build/**"]
+    },
     "lint": {
       "outputs": []
     },
